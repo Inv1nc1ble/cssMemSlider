@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    margin: 0; 
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.slider {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-wrapper {
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.slider-item {
+    width: 100%;
+    height: 390px;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.control-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.control-item-dot {
+    background-color: skyblue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.control-item-dot.active {
+    background-color: transparent;
+    border: 4px solid skyblue;
+    border-radius: 50%;
+}
+
+.control-item:hover > .control-item-dot {
+    background-color: #fff;
+}
+
+.control-item:hover > .control-item-dot.active {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.control-item:active > .control-item-dot {
+    opacity: 0.5;
+}
