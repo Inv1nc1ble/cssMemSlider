@@ -5,13 +5,14 @@
 }
 
 html {
-    font-size: 1.5em;
+    font-size: 18px;
 }
 
 body {
     margin: 0; 
     background-color: #000;
     color: #fff;
+    font-size: 1.5em;
 }
 
 .container {
@@ -24,11 +25,11 @@ body {
     width: 600px;
     display: flex;
     flex-direction: column;
+    row-gap: 5vh;
 }
 
 .slider-wrapper {
     width: 100%;
-    margin-bottom: 5vh;
     overflow: hidden;
 }
 
@@ -109,6 +110,27 @@ body {
 @media screen and (max-width: 650px) {
     .slider {
         width: 400px;
+    }
+
+    .slider-info {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 5vh;
+    }
+
+    .slider-title {
+        align-self: flex-start;
+        font-size: 0.75em;
+    }
+
+    .slider-controls {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 439px) {
+    .slider {
+        width: 300px;
     }
 
     .slider-info {
