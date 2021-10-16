@@ -35,6 +35,7 @@ body {
 .slider-inner {
     display: flex;
     transition: transform 0.5s ease;
+    transform: translateX(0px);
 }
 
 .slider-item {
@@ -51,6 +52,15 @@ body {
 .slider-info {
     display: flex;
     justify-content: space-between;
+}
+
+.slider-title {
+    align-self: center;
+    transition: opacity 0.3s ease;
+}
+
+.hide {
+    opacity: 0;
 }
 
 .slider-controls {
@@ -77,6 +87,7 @@ body {
 }
 
 .control-item-dot.active {
+    transition: all 0.0s ease;
     background-color: transparent;
     border: 4px solid skyblue;
     border-radius: 50%;
@@ -93,4 +104,12 @@ body {
 
 .control-item:active > .control-item-dot {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 650px) {
+    .slider {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
 }
