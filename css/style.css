@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 1.5em;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 
 .slider-wrapper {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 5vh;
     overflow: hidden;
 }
 
@@ -109,7 +109,15 @@ body {
 @media screen and (max-width: 650px) {
     .slider {
         width: 400px;
-        display: flex;
+    }
+
+    .slider-info {
         flex-direction: column;
+        justify-content: center;
+        row-gap: 5vh;
+    }
+
+    .slider-controls {
+        justify-content: center;
     }
 }
