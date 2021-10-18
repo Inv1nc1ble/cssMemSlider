@@ -52,22 +52,22 @@ body {
 }
 
 .control-item:hover .control-item-dot {
-    border-color: #fff !important;
+    border-color: #fff;
     background-color: #fff;
 }
 
 .control-item:active .control-item-dot {
     background-color: skyblue;
-    border-color:  skyblue !important;
+    border-color:  skyblue;
 }
 
-#slide1:checked ~ .control-item:nth-child(1) .app__pointers-item,
-#slide2:checked ~ .control-item:nth-child(2) .app__pointers-item,
-#slide3:checked ~ .control-item:nth-child(3) .app__pointers-item,
-#slide4:checked ~ .control-item:nth-child(4) .app__pointers-item,
-#slide5:checked ~ .control-item:nth-child(5) .app__pointers-item
+#slide-1:checked ~ .slider-info .slider-controls .control-item:nth-child(1) .control-item-dot,
+#slide-2:checked ~ .slider-info .slider-controls .control-item:nth-child(2) .control-item-dot,
+#slide-3:checked ~ .slider-info .slider-controls .control-item:nth-child(3) .control-item-dot,
+#slide-4:checked ~ .slider-info .slider-controls .control-item:nth-child(4) .control-item-dot,
+#slide-5:checked ~ .slider-info .slider-controls .control-item:nth-child(5) .control-item-dot
 {
-    border: 0.2rem solid skyblue;
+    border: 0.2rem solid #fff;
     background-color: transparent;
 }
 
