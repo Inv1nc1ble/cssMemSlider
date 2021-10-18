@@ -57,8 +57,8 @@ body {
 }
 
 .control-item:active .control-item-dot {
-    background-color: skyblue;
-    border-color:  skyblue;
+    opacity: 0.5;
+    
 }
 
 #slide-1:checked ~ .slider-info .slider-controls .control-item:nth-child(1) .control-item-dot,
